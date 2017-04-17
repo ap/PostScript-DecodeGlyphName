@@ -91,6 +91,8 @@ sub parse_adobeglyphlist {
 
 __END__
 
+=pod
+
 =head1 SYNOPSIS
 
  use PostScript::GlyphToUnicode file => '/usr/doc/PostScript/aglfn13.txt';
