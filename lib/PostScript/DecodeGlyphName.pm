@@ -1,10 +1,8 @@
-use 5.008001;
-use strict;
-use warnings;
+use 5.008001; use strict; use warnings;
 
 package PostScript::DecodeGlyphName;
 
-# ABSTRACT: PostScript glyph name to Unicode conversion
+our $VERSION = '0.001';
 
 use Exporter::Tidy all => [qw( decode_glyph parse_adobeglyphlist )];
 
@@ -91,6 +89,14 @@ sub parse_adobeglyphlist {
 
 __END__
 
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+PostScript::DecodeGlyphName - PostScript glyph name to Unicode conversion
+
 =head1 SYNOPSIS
 
  use PostScript::GlyphToUnicode file => '/usr/doc/PostScript/aglfn13.txt';
@@ -153,3 +159,5 @@ documents.)
 
 The C<decode_glyph> function does not take the font into account and therefore
 will produce incorrect results for glyphs from the I<ZapfDingbats> font.
+
+=cut
