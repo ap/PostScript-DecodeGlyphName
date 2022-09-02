@@ -2,7 +2,7 @@ use 5.008001; use strict; use warnings;
 
 package PostScript::DecodeGlyphName;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use Exporter::Tidy all => [qw( decode_glyph parse_adobeglyphlist )];
 
